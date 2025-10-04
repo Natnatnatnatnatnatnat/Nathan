@@ -1,17 +1,153 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Lesson Two</title>
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-        <h1>Hello World</h1>
-        <p>hfiwehifewiufewhifwihu</p>
-        <li>faiffefweefwowe</li>
-        <li>fsdhlk</li>
-        <li>ffewohifweihfoeddmnvxzbcmbvxmbcm</li>
-        <img src="download (1).jpeg">
-        <img id="specialuser" src="download (1).jpeg">
-        <img class="user" src="download (1).jpeg">
-    </body>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan | Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <a href="#home">Nathan</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+             <!-- Mobile Menu Button (Optional) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+             <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+             <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Home/Hero Section -->
+        <section id="home" class="text-center py-20">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Nathan Guan</h1>
+            <p class="text-xl md:text-2xl text-gray-600">Aspiring Game Developer & Designer</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- You can replace this placeholder with your own image -->
+                    <img src="https://placehold.co/150x150/e2e8f0/333333?text=You" alt="Portrait of Nathan Guan" class="w-36 h-36 rounded-full mb-8 md:mb-0 md:mr-12 object-cover">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Hello! I'm Nathan, a passionate and creative game developer. I'm currently learning the ropes of modern game development and am excited about building fun, engaging, and immersive games. I enjoy turning complex problems into simple and intuitive designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/6d28d9/ffffff?text=World+9999" alt="World 9999 Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">World 9999</h3>
+                        <p class="text-gray-700 mb-4">A stealth action game set in a sci-fi future.</p>
+                        <a href="https://pixelpad.io/app/oypneeyappl/?edit=1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline font-medium">Play Game &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/7dd3fc/ffffff?text=Endless+Runner" alt="Project 2 Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Endless Runner</h3>
+                        <p class="text-gray-700 mb-4">An addictive endless runner for mobile, created using Godot. Focused on procedural generation and mobile controls.</p>
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">Play Game &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/fca5a5/ffffff?text=Puzzle+Game" alt="Project 3 Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Puzzle Adventure</h3>
+                        <p class="text-gray-700 mb-4">A top-down puzzle adventure game made with Unreal Engine, focusing on narrative and environmental puzzles.</p>
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">Play Game &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    I'm always open to discussing new projects or creative ideas. Feel free to reach out to me!
+                </p>
+                <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">
+                    Say Hello
+                </a>
+                <!-- Add social media links here if you want -->
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="text-center text-gray-600">
+            <p>&copy; 2024 Nathan Guan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
 </html>
+
+
+
+
